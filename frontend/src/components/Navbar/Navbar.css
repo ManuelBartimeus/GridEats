@@ -1,0 +1,258 @@
+/* Existing navbar styles */
+.navbar {
+    padding-top: 20px;
+    padding-right: 30px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.navbar .logo {
+    width: 300px;
+}
+
+.navbar-menu {
+    display: flex;
+    list-style: none;
+    gap: 20px;
+    color: #181847;
+    font-size: 18px; 
+    padding-right: 35px;
+}
+
+.navbar-right {
+    display: flex;
+    align-items: center;
+    gap: 40px;
+}
+
+.navbar-search-input {
+    padding: 10px 14px;
+    border: 1px solid #ccc;
+    border-radius: 20px;
+    min-width: 220px;
+    font-size: 14px;
+}
+
+.navbar button {
+    background: transparent;
+    font-size: 16px;
+    color: #181847;
+    border: 1px solid tomato;
+    padding: 10px 30px;
+    border-radius: 50px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.navbar button:hover {
+    background-color: #fff4f2;
+}
+
+.logout-btn {
+    background: transparent;
+    font-size: 16px;
+    color: #181847;
+    border: 1px solid #ea4335;
+    padding: 10px 30px;
+    border-radius: 50px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.logout-btn:hover {
+    background-color: #fff4f2;
+    border-color: #d33b2c;
+}
+
+.navbar .active {
+    padding-bottom: 2px;
+    border-bottom: 2px solid #49557e;
+}
+
+.navbar li {
+    cursor: pointer;
+}
+
+.navbar-search-icon {
+  position: relative;
+  cursor: pointer;
+  transition: transform 0.2s ease;
+}
+
+.navbar-search-icon:hover {
+  transform: scale(1.05);
+}
+
+.navbar-search-icon .dot {
+  position: absolute;
+  min-width: 18px;
+  min-height: 18px;
+  background-color: #ff6b35;
+  border-radius: 50%;
+  top: -8px;
+  right: -8px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 12px;
+  font-weight: 600;
+  color: white;
+  border: 2px solid white;
+}
+
+/* Modal Styles */
+.modal-overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: rgba(0, 0, 0, 0.7);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: 1000;
+}
+
+.modal {
+    background: white;
+    padding: 20px;
+    border-radius: 8px;
+    text-align: center;
+    width: 300px;
+}
+
+.modal h2 {
+    font-size: 22px;
+    color: #181847;
+}
+
+.role-buttons {
+    margin-top: 20px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.role-buttons button {
+    background-color: rgb(221, 177, 29);
+    border: none;
+    padding: 10px 20px;
+    color: white;
+    border-radius: 50px;
+    cursor: pointer;
+    font-size: 16px;
+    transition: 0.3s;
+}
+
+.role-buttons button:hover {
+    background-color: #fffdfd;
+}
+
+/* Responsive adjustments */
+@media (max-width: 1050px) {
+    .navbar .logo {
+        width: 140px;
+    }
+
+    .navbar-menu {
+        gap: 20px;
+        font-size: 17px;
+    }
+
+    .navbar-right {
+        gap: 30px;
+    }
+
+    .navbar-right img {
+        width: 22px;
+    }
+
+    .navbar-right button {
+        padding: 8px 25px;
+    }    
+}
+
+@media (max-width: 900px) {
+    .navbar .logo {
+        width: 120px;
+    }
+
+    .navbar-menu {
+        gap: 15px;
+        font-size: 16px;
+    }
+
+    .navbar-right {
+        gap: 20px;
+    }
+
+    .navbar-right img {
+        width: 20px;
+    }
+
+    .navbar-right button {
+        padding: 7px 20px;
+        font-size: 15px;
+    }    
+}
+
+@media (max-width: 750px) {
+    .navbar-menu {
+        display: none;
+    }
+}
+/* Modal styling */
+.modal-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.7);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.modal {
+  background-color: white;
+  padding: 20px;
+  border-radius: 8px;
+  width: 400px;
+  text-align: center;
+}
+
+.modal-input-field {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 15px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+.modal-login-button, .modal-close-button, .modal-role-button {
+  background-color: #4CAF50;
+  color: white;
+  padding: 10px 20px;
+  margin-top: 10px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  width: 100%;
+}
+
+.modal-login-button:hover, .modal-close-button:hover, .modal-role-button:hover {
+  background-color: #45a049;
+}
+
+/* For additional buttons in modal */
+.modal-role-button {
+  margin-top: 10px;
+  background-color: #007BFF;
+}
+
+.modal-close-button {
+  background-color: #f44336;
+  margin-top: 20px;
+}

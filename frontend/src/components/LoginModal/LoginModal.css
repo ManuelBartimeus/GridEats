@@ -1,0 +1,84 @@
+/* LoginModal.css */
+.modal-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(0, 0, 0, 0.5);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.modal {
+  background-color: white;
+  padding: 20px;
+  border-radius: 8px;
+  width: 500px;
+  height: 450px;
+}
+
+.modal h2{
+  margin-bottom: 40px;
+}
+
+.modal-input {
+  border: 1px solid #ccc;
+  padding: 20px;
+  margin-bottom: 30px;
+  border-radius: 8px;
+}
+
+.modal-input-field {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+
+.role-buttons {
+  display: flex;
+  justify-content: space-between;
+  width: 600px; /* Increased width */
+  margin: 0 auto 20px; /* Centering the role buttons */
+  padding-left: 110px;
+}
+
+.role-buttons button{
+  border: 1px solid #ffc400;
+  background-color: white;
+  color: #ffc400;
+  font-weight: 500;
+}
+
+.active-role, .inactive-role {
+  width: 48%; /* Ensures both buttons fit within the 600px width */
+  padding: 10px 20px;
+  text-align: center;
+  border-radius: 4px;
+}
+
+.role-buttons button:hover{
+  background-color: #ffc400;
+  color: white
+}
+
+.modal-login-button, .modal-close-button {
+  width: 100%;
+  padding: 10px;
+  margin-top: 10px;
+}
+
+.create-account-link {
+  display: block;
+  font-weight: 500;
+  text-align: center;
+  margin-top: 30px;
+  color: #9a9999;
+  text-decoration: none;
+}
+
+.create-account-link:hover{
+  color:#ffc400
+}
